@@ -1,0 +1,85 @@
+/* עיצוב רגיל לכל כרטיס */
+.lesson-card {
+  width: 280px;
+  transition: all 0.3s;
+}
+
+/* עיצוב מיוחד שיופעל רק אם התנאי באנגולר מתקיים */
+.started-lesson {
+  background-color: #ffeb3b !important; /* צבע רקע צהוב בולט */
+  border: 2px solid #fbc02d;
+  transform: scale(1.02); /* הגדלה קלה כדי להדגיש */
+}
+/* עיצוב בסיסי לכרטיס */
+.lesson-card {
+    direction: rtl;      /* כיוון כתיבה מימין לשמאל */
+  text-align: right;   /* יישור טקסט לימין */
+  width: 100%; /* יתפוס את כל רוחב הקונטיינר שלו */
+  max-width: 350px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px; /* פינות מעוגלות יותר למראה מודרני */
+  overflow: hidden;
+  background-color: #c0d3d4; 
+  border: 1px solid #d9e9da; 
+  position: relative;}
+
+/* אפקט ריחוף על הכרטיס */
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* כותרת הכרטיס */
+mat-card-title {
+  font-weight: bold;
+  color: #1976d2; /* כחול אנגולר קלאסי */
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+mat-card-subtitle {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+/* תוכן הכרטיס */
+mat-card-content p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* הדגשת מחיר */
+mat-card-content p:first-of-type {
+  font-weight: bold;
+  color: #7d2e4b; /* ירוק למחיר */
+}
+
+/* --- העיצוב המיוחד לשיעור שהתחיל --- */
+.started-lesson {
+  background-color: #e6eff0 !important; 
+  border: 2px solid #d9e9da; 
+  position: relative;
+}
+
+/* בונוס: הוספת כיתוב "התחיל!" קטן בצד לשיעורים שהתחילו */
+.started-lesson::before {
+  content: "כבר התחיל";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #cbe369;
+  color: #000;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-transform: uppercase;
+}

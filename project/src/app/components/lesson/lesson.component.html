@@ -1,0 +1,6 @@
+<!-- lessons-list.component.html -->
+<div class="gallery-container">
+  @for (item of lessonsList; track item.name) {
+    <app-lesson-details [lesson]="item"></app-lesson-details>
+  }
+</div>
