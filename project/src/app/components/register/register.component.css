@@ -1,0 +1,26 @@
+.container {
+  padding: 20px;
+  direction: rtl; /* יישור לימין של כל הקומפוננטה */
+}
+
+h2 {
+  font-family: sans-serif;
+  color: #333;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* עיצוב כפתור ה"פרטים" בתוך הטבלה */
+::ng-deep .details-btn {
+  background-color: #e0e9f2;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+::ng-deep .details-btn:hover {
+  background-color: #97bde5;
+}

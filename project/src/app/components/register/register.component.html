@@ -1,1 +1,13 @@
-<p>register works!</p>
+<div class="container">
+  <h2>רשימת נרשמות לשיעורים</h2>
+  
+  <!-- הגדרת הטבלה -->
+  <ag-grid-angular
+    style="width: 100%; height: 500px;"
+    [theme]="myTheme"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [enableRtl]="true"> 
+  </ag-grid-angular>
+</div>
