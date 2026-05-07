@@ -45,6 +45,7 @@ export class LoginComponent implements OnInit {
     const password = this.loginForm.get('password')?.value;
     const user = this.usersList.find(u => u.name === username && u.password === password);
     if (user) {
+      localStorage.setItem("userToken","signed");
       if (user.role === 'secretary') {
         this.router.navigate(['/register']);
       }
@@ -52,7 +53,8 @@ export class LoginComponent implements OnInit {
         this.router.navigate(['/lessons']);
       }
     } else {
-      alert('שם משתמש או סיסמה שגויים. אנא נסה שוב.');
+        localStorage.setItem("userToken","unsigned");
+        alert('שם משתמש או סיסמה שגויים. אנא נסה שוב.');
     }
   }
 

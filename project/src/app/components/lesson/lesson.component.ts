@@ -11,7 +11,7 @@ import { LessonDetailsComponent } from '../lesson-details/lesson-details.compone
 export class LessonComponent {
   lessonsList = [
     {
-      name: 'leccion 1',
+      name: 'נגינה',
       teacher: 'מורה 1',
       price: 100,
       day: 1,
@@ -20,7 +20,7 @@ export class LessonComponent {
       startDate: '2023-01-01'
     },
     {
-      name: 'leccion 2',
+      name: 'ציור',
       teacher: 'מורה 2',
       price: 150,
       day: 2,
@@ -29,13 +29,30 @@ export class LessonComponent {
       startDate: '2023-01-01'
     },
     {
-      name: 'leccion 3',
+      name: 'אפיה',
       teacher: 'מורה 3',
       price: 200,
       day: 3,
       hour: '23:00',
       meetings: 5,
       startDate: '2026-05-05'
-    }
+    }, {
+      name: 'אפיה',
+      teacher: 'מורה 3',
+      price: 200,
+      day: 3,
+      hour: '23:00',
+      meetings: 5,
+      startDate: '2026-10-12'
+    },{
+      name: 'אנגלית',
+      teacher: 'מורה 5',
+      price: 200,
+      day: 3,
+      hour: '23:00',
+      meetings: 5,
+      startDate: '2026-10-10'
+    },
+
   ];
 }

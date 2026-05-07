@@ -23,7 +23,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px; /* פינות מעוגלות יותר למראה מודרני */
   overflow: hidden;
-  background-color: #c0d3d4; 
+  background-color: #e6eff0; 
   border: 1px solid #d9e9da; 
   position: relative;}
 
@@ -64,7 +64,7 @@ mat-card-content p:first-of-type {
 
 /* --- העיצוב המיוחד לשיעור שהתחיל --- */
 .started-lesson {
-  background-color: #e6eff0 !important; 
+  background-color: #c0d3d4 !important; 
   border: 2px solid #d9e9da; 
   position: relative;
 }
